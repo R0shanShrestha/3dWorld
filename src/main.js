@@ -53,7 +53,7 @@ if (i == 0) {
   footorCol.classList.add("lg:text-slate-900");
 }
 
-const modleArr = ["public/modle/magical.glb", "public/modle/barker.glb"];
+const modleArr = ["/modle/magical.glb", "/modle/barker.glb"];
 loader.load(modleArr[i], (gltf) => {
   model = gltf.scene;
   // model.scale.set(0.5,0.5,0.5);
