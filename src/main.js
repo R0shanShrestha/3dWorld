@@ -52,6 +52,7 @@ if (i == 0) {
 } else {
   footorCol.classList.add("lg:text-slate-900");
 }
+console.log(i)
 
 const modleArr = ["/modle/magical.glb", "/modle/barker.glb"];
 loader.load(modleArr[i], (gltf) => {
