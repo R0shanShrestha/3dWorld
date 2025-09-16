@@ -45,17 +45,9 @@ const loader = new GLTFLoader();
 // gui.close()
 
 // btn to change model
-let i = Math.floor(Math.random() * 2);
-const footorCol = document.querySelector("footer");
-if (i == 0) {
-  footorCol.classList.add("lg:text-slate-100");
-} else {
-  footorCol.classList.add("lg:text-slate-900");
-}
-// console.log(i)
 
-const modleArr = ["/modle/magical.glb", "/modle/barker.glb"];
-loader.load(modleArr[i], (gltf) => {
+
+loader.load("/modle/barker.glb", (gltf) => {
   model = gltf.scene;
   // model.scale.set(0.5,0.5,0.5);
   model.scale.setScalar(0.5);
